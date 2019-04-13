@@ -1,0 +1,58 @@
+<div data-ng-controller="newsController">
+
+    <!-- Events -->
+    <div class="event" id="events">
+        <div class="container">
+            <!--<h3>Events</h3>-->
+            <div class="row" >
+                <div class="blog-masonry masonry-true">
+                    <div class="post-masonry col-md-4 eve-agile e1" data-ng-repeat="newsdata in newsList">
+                        <div class="eve-sub1">
+                            <a href="#" data-toggle="modal" data-target="#myModal5"><img class="img-responsive" src="../admin/post_images/{{newsdata.image}}" alt="image"></a>
+                            <h4><a href="#" data-toggle="modal" data-target="#myModal5">{{newsdata.title}}</a></h4>
+                            <h6>By an <a href="#">admin</a>, Oct-2016</h6>
+                            <p>
+                                {{newsdata.content}}
+                            </p>
+                        </div>
+                        <div class="eve-sub2">
+                            <div class="eve-w3lleft">
+                                <h6><i class="fa fa-comment-o" aria-hidden="true"></i>17</h6>
+                                <h6><i class="fa fa-heart-o" aria-hidden="true"></i>78</h6>
+                            </div>
+                            <div class="eve-w3lright e1">
+                                <a href="#" data-toggle="modal" data-target="#myModal5"><h5>More</h5></a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    RejuvSense
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <section>
+                    <div class="modal-body">
+                        <img src="images/10.jpg" alt=" " class="img-responsive" />
+                        <p> Rejuvsense Academy is an educational institution that facilitates learning environment for job seekers to attain their goals  especially in the areas of Banking Insurance,SSC ,UPSC through intensive training.We ensure integrity of teaching with eminent faculties and one of our major attraction is online platform,that offers students to develop their speed and accuracy for the actual online competition.We also provide study material,library........</i></p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- //Modal1 -->
+
+
+
+    <!-- //Events -->
+</div>

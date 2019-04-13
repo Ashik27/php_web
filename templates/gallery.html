@@ -1,0 +1,36 @@
+<div data-ng-controller="galleryController">
+
+
+    <!-- Welcome message -->
+
+  <div class="profileSec">
+      <div class="main-posts">
+          <div class="container">
+              <div class="row">
+                  <div class="blog-masonry masonry-true">
+                      <div class="post-masonry col-md-4 col-sm-6" data-ng-repeat="imagedata in imageList">
+                          <div class="post-thumb" >
+                              <img src="../admin/uploaded_image/{{imagedata.image}}" alt="">
+                              <div class="title-over">
+                                  <h4><a href="#">{{imagedata.title}}</a></h4>
+                              </div>
+                              <div class="post-hover text-center">
+                                  <div class="inside">
+                                      <i class="fa fa-plus"></i>
+                                      <span class="date">25 Jan 2084</span>
+                                      <h4><a href="#">Title one goes here</a></h4>
+                                      <p>Cum sociis natoque penatibus et magnis dis parturient</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div> <!-- /.post-masonry -->
+
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+    <!-- Preloader -->
+</div>
